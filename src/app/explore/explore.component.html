@@ -1,0 +1,74 @@
+<section class="jumbotron text-center">
+  <div class="container header-container">
+    <h1 class="jumbotron-heading">Album example</h1>
+    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
+      etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+  </div>
+</section>
+<form class="container-fluid form-group" id="search">
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <select id="type" class="form-control">
+        <option selected value="any|any">Any...</option>
+        <option value="food|any">Food</option>
+        <option value="recreation|any">Recreation</option>
+      </select>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <select id="location" class="form-control">
+        <option selected value="any">Anywhere...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-sm-6 col-md-3 offset-sm-3 offset-md-0">
+      <button type="submit" class="btn btn-colour-1" (click)="search()">Explore!</button>
+    </div>
+  </div>
+</form>
+
+
+<div class="album py-5 bg-light" style="position: relative;" id="catalogue">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let item of catalogue" class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="img-fluid cover-image" src="{{url + item.coverImage}}" />
+          <div class="card-body">
+            <p class="card-text">
+              {{item.name}}
+              <br />
+              {{item.location}}
+              <br />
+              {{item.address}}
+              <br />
+              {{item.timmings}}
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary"
+                  (click)="onClick(item.locationId)">View</button>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="centeredOverlay" *ngIf="loading">
+      <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+  </div>
+</div>

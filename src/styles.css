@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files*/
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1{
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-colour-1 {
+  color: #fff;
+  background-color: #6cbf84;
+  border-color: #6cbf84;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn-colour-1:hover,
+.btn-colour-1:active,
+.btn-colour-1:focus,
+.btn-colour-1.active {
+  /* let's darken #004E64 a bit for hover effect */
+  background: #4b855c;
+  color: #ffffff;
+  border-color: #4b855c;
+}
+
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 12px;
+  }
+}

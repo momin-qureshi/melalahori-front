@@ -1,0 +1,8 @@
+<form>
+  <input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+  <input type="text" id="locationId"/>
+  <button type="button" class="btn btn-success btn-s" (click)="postData()"
+    [disabled]="!uploader.getNotUploadedItems().length">
+    Upload an Image
+  </button>
+</form>

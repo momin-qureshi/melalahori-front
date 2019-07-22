@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800&display=swap');
+.masthead {
+  height: 100vh;
+  min-height: 500px;    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1{
+  text-shadow: 0px 0px 5px black; 
+  color: white;
+}
+p{
+  text-shadow: 0px 0px 5px black; 
+  color: white;
+}
+

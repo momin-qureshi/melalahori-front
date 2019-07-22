@@ -1,0 +1,12 @@
+<form>
+  <input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+  <input class="form-control" type="text" id="locationId" placeholder="locationId"/>
+  <input class="form-control" type="text" id="name" placeholder="name"/>
+  <input class="form-control" type="text" id="location" placeholder="location"/>
+  <input class="form-control" type="text" id="address" placeholder="address"/>
+  <input class="form-control" type="text" id="timmings" placeholder="timmings"/>
+  <input class="form-control" type="text" id="type" placeholder="type"/>
+  <button type="button" class="btn btn-success btn-s" (click)="uploader.uploadAll()">
+    Upload an Image
+  </button>
+</form>
